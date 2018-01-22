@@ -8,4 +8,5 @@ html {
   justify-content: space-around;
   height: 4rem;
   border: 1px dotted black;
+  background-color: red;
 }
