@@ -283,34 +283,7 @@ body {
   .navbar--desktop {
     display: none;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  /* for desktop */
-  .navbar--mobile {
+  .quote {
     display: none;
-  }
-  .desktop__wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 2rem 1.5rem 2rem 1.5rem;
-    box-sizing: border-box;
-    border: 3px solid gold;
-  }
-  .banner__img__wrapper {
-    width: 60%;
-    display: inline;
-  }
-  .intro {
-    width: 40%;
-  }
-  .intro__text--primary {
-    font-size: 2rem;
-  }
-  .intro__text--secondary {
-    font-size: 1.5rem;
-  }
-  .intro__button--text {
-    font-size: 1.5rem;
   }
 }
