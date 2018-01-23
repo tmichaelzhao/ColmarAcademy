@@ -7,28 +7,37 @@
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <!-- laid out with mobile view in mind -->
-    <!-- nav bar with 4 icons -->
-    <nav class="navbar">
-      <a href="#wip" class="navbar__button"><img src="./doc/placeholder assets/img/ic-logo.png"></a>
-      <a href="#wip" class="navbar__button"><img src="./doc/placeholder assets/img/ic-on-campus.png"></a>
-      <a href="#wip" class="navbar__button"><img src="./doc/placeholder assets/img/ic-online.png"></a>
-      <a href="#wip" class="navbar__button"><img src="./doc/placeholder assets/img/ic-login.png"></a>
+    <!-- mobile nav bar with 4 icons -->
+    <nav class="navbar--mobile">
+      <a href="#wip"><img class="navbar--mobile__button" src="./doc/placeholder assets/img/ic-logo.png"></a>
+      <a href="#wip"><img class="navbar--mobile__button" src="./doc/placeholder assets/img/ic-on-campus.png"></a>
+      <a href="#wip"><img class="navbar--mobile__button" src="./doc/placeholder assets/img/ic-online.png"></a>
+      <a href="#wip"><img class="navbar--mobile__button" src="./doc/placeholder assets/img/ic-login.png"></a>
     </nav>
-    <!-- banner -->
-    <header>
-      <img class="banner__img" src="./doc/placeholder assets/img/banner.png">
-    </header>
-    <!-- first section, 2 lines of text and button -->
-    <section class="intro">
-      <p class="intro__text--primary">Learn something new everyday</p>
-      <p class="intro__text--secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <div class="intro__button">
-        <a href="#wip" class="intro__button--link"><p class="intro__button--text">Start Here</p></a>
+    <!-- desktop nav bar-->
+    <nav class="navbar--desktop">
+      <a href="#wip"><img class="navbar--desktop__logo--img" src="./doc/placeholder assets/img/ic-logo.png"></a>
+      <a href="#wip"><span class="navbar--desktop__logo--text">COLMAR ACADEMY</span></a>
+      <div class="navbar--desktop__links">
+        <a href="#wip"><span class="navbar--desktop__link--text">On campus</span></a>
+        <a href="#wip"><span class="navbar--desktop__link--text">Online</span></a>
+        <a href="#wip"><span class="navbar--desktop__link--text">Our companies</span></a>
+        <a href="#wip"><span class="navbar--desktop__link--text">Sign in</span></a>
       </div>
-    </section>
-    <!-- second section, orientation img, 2 lines of text, link -->
-    <section class="orientation">
+    </nav>
+    <div class="desktop__wrapper">
+      <div class="banner__img__wrapper">
+        <img class="banner__img" src="./doc/placeholder assets/img/banner.png">
+      </div>
+      <section class="intro"> <!-- first section, 2 lines of text and button -->
+        <p class="intro__text--primary">Learn something new everyday</p>
+        <p class="intro__text--secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="intro__button">
+          <a href="#wip" class="intro__button--link"><p class="intro__button--text">Start Here</p></a>
+        </div>
+      </section>
+    </div>
+    <section class="orientation"> <!-- second section, orientation img, 2 lines of text, link -->
       <img class="orientation__img" src="./doc/placeholder assets/img/information-orientation-mobile.png">
       <div class="orientation__container">
         <p class="orientation__text--primary">Orientation date</p>
@@ -38,8 +47,7 @@
         </div>
       </div>
     </section>
-    <!-- third section, campus img, 2 lines of text, link -->
-    <section class="campus">
+    <section class="campus"> <!-- third section, campus img, 2 lines of text, link -->
       <img class="campus__img" src="./doc/placeholder assets/img/information-orientation-mobile.png">
       <div class="campus__container">
         <p class="campus__text--primary">Our Campus</p>
@@ -49,8 +57,7 @@
         </div>
       </div>
     </section>
-    <!-- fourth section, guest img, 2 lines of text, link -->
-    <section class="guest">
+    <section class="guest"> <!-- fourth section, guest img, 2 lines of text, link -->
       <img class="guest__img" src="./doc/placeholder assets/img/information-orientation-mobile.png">
       <div class="guest__container">
         <p class="guest__text--primary">Special guest lecture</p>
@@ -60,8 +67,7 @@
         </div>
       </div>
     </section>
-    <!-- fifth section, start learning text, 6 blocks of text -->
-    <section class="subjects">
+    <section class="subjects"> <!-- fifth section, start learning text, 6 blocks of text -->
       <p class="subjects__title">Start learning</p>
       <div class="subjects__button">
         <a href="#wip"><p class="subjects__button--text">Software engineering</p></a>
@@ -82,16 +88,14 @@
         <a href="#wip"><p class="subjects__button--text">Marketing</p></a>
       </div>
     </section>
-    <!-- sixth section, thesis text, video -->
-    <section class="thesis">
+    <section class="thesis"> <!-- sixth section, thesis text, video -->
       <p class="thesis__title">Thesis exhibits</p>
       <video width="100%" autoplay muted loop>
         <source src="./resources/vid/thesis.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video>
     </section>
-    <!-- footer, copyright text -->
-    <footer class="footer">
+    <footer class="footer"> <!-- footer, copyright text -->
       <p class="footer__text">&copy; 2016 Colmar Academy. All rights reserved.</p>
     </footer>
   </body>

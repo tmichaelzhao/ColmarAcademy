@@ -3,12 +3,11 @@ html {
 }
 
 body {
-  width: 100%;
   display: flex;
   flex-flow: column nowrap;
 }
 
-.navbar {
+.navbar--mobile {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -17,6 +16,36 @@ body {
   box-sizing: border-box;
   border: 3px dotted darkgreen;
 }
+
+  .navbar--mobile__button {
+
+  }
+
+.navbar--desktop {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 4rem;
+  padding: 0rem 1rem 0rem 1.5rem;
+  box-sizing: border-box;
+  border: 3px solid darkgreen;
+}
+
+  .navbar--desktop__logo--img {
+    height: 2rem;
+  }
+
+  .navbar--desktop__logo--text {
+
+  }
+
+  .navbar--desktop__links {
+    margin-left: auto;
+  }
+
+    .navbar--desktop__link--text {
+      margin: 0rem 0.5rem 0rem 0.5rem;
+    }
 
 .banner__img {
   display: block;
@@ -248,3 +277,47 @@ body {
     text-align: center;
     font-size: calc(0.5rem + 2.5vw);
   }
+
+@media only screen and (max-width: 768px) {
+  /* hide this content in mobile view */
+  .navbar--desktop {
+    display: none;
+  }
+  .desktop__wrapper {
+    display: none;
+  }
+  .banner__img__wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* for desktop */
+  .navbar--mobile {
+    display: none;
+  }
+  .desktop__wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    box-sizing: border-box;
+    border: 3px solid gold;
+  }
+  .banner__img__wrapper {
+    width: 60%;
+    display: inline;
+  }
+  .intro {
+    width: 40%;
+  }
+  .intro__text--primary {
+    font-size: 2rem;
+  }
+  .intro__text--secondary {
+    font-size: 1.5rem;
+  }
+  .intro__button--text {
+    font-size: 1.5rem;
+  }
+}
