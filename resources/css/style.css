@@ -283,12 +283,6 @@ body {
   .navbar--desktop {
     display: none;
   }
-  .desktop__wrapper {
-    display: none;
-  }
-  .banner__img__wrapper {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -297,7 +291,6 @@ body {
     display: none;
   }
   .desktop__wrapper {
-    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     padding: 2rem 1.5rem 2rem 1.5rem;
