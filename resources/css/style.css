@@ -296,7 +296,7 @@ a>*:hover {
 }
 
 /**PHONE VIEW**/
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .navbar, .orientation_img, .campus_img, .guest_img, .subject_block-img, .subject_text2, .info_left_col-container, .thesis_right-block-container, .footer_links-container {
     display: none;
   }
@@ -325,7 +325,7 @@ a>*:hover {
 
 }
 /**DESKTOP VIEW**/
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navbar-m, .orientation_img-m, .campus_img-m, .guest_img-m {
     display: none;
   }
