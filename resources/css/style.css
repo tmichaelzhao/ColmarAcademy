@@ -30,6 +30,21 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none !important;
+  color: rgb(0,0,0);
+}
+a>*:hover {
+  text-decoration: underline;
+}
+
+.highlight:hover {
+  background-color:rgb(231,188,41);
+}
+.highlight {
+  transition: background-color 0.25s linear 0s;
+}
+
 .text-1 {
   font-family: 'Quattrocento', serif;
   font-size: calc(1.0rem + 2.5vw);
@@ -48,24 +63,27 @@ img {
 
 @media only screen and (min-width: 768px) {
   .text-1 {
-    font-size: 2.5rem;
+    font-size: calc(2.5rem + 1vw);
   }
   .text-2 {
-    font-size: 1.75rem;
+    font-size: calc(1.25rem + 0.75vw);
   }
   .text-3 {
-    font-size: 1.25rem;
+    font-size: calc(0.75rem + 0.5vw);
   }
 }
 
 .button {
   display: block;
-  background-color: rgb(243,164,71);
-  border: 1px solid black;
+  background-color: rgb(165,181,146);
+  border: 2px solid black;
   text-align: center;
   border-radius: 12px;
+  transition: background-color 0.5s linear 0s;
 }
-
+.button:hover {
+  background-color: rgb(231,188,41);
+}
 /**NAVBAR**/
 .navbar-m {
   display: flex;
@@ -73,7 +91,6 @@ img {
   align-items: center;
   justify-content: space-around;
   height: 4rem;
-  border: 3px dotted darkgreen;
 }
 .navbar {
   width: 100%;
@@ -82,7 +99,6 @@ img {
   align-items: center;
   height: 4rem;
   padding: 0rem 1rem 0rem 1.5rem;
-  border: 3px solid darkgreen;
 }
 .navbar_logo-container {
   height: 2rem;
@@ -90,12 +106,14 @@ img {
 .navbar_title {
   font-family: 'Quattrocento', serif;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
+  color: rgba(0,0,0,0.5);
 }
 .navbar_links-container {
   margin-left: auto;
 }
 .navbar_link {
+  font-weight: bold;
   padding: 0rem 0.35rem 0rem 0.35rem;
   margin: 0rem 0.15rem 0rem 0.15rem;
 }
@@ -104,13 +122,11 @@ img {
   display: flex;
   flex-flow: row nowrap;
   padding: 2rem 0rem;
-  border: 3px solid red;
-  background-color: rgb(165,181,146);
+  background-color: rgba(128,158,194,0.5);
 }
 .intro_img-container {
   width: 60%;
   margin: 0rem 0.75rem 0rem 1.5rem;
-  border: 2px dotted green;
 }
 .intro_col-container {
   width: 40%;
@@ -118,11 +134,9 @@ img {
   flex-flow: column nowrap;
   justify-content: center;
   margin: 0rem 1.5rem 0rem 0.75rem;
-  border: 2px dotted blue;
 }
 .intro_text {
   margin: 2rem 1rem 0rem 1rem;
-  border: 1px dotted black;
 }
 .intro_button {
   padding: 0.5rem 0rem 0.5rem 0rem;
@@ -132,17 +146,18 @@ img {
 .info_row-container {
   display: flex;
   flex-flow: row nowrap;
-  border: 3px solid blue;
 }
 .info_left_col-container {
   width: 60%;
   display: flex;
   flex-flow: column nowrap;
   padding: 2rem 1.5rem;
-  border: 2px dotted green;
 }
 .info_text1 {
   padding: 2rem 0rem 1.5rem 0rem;
+}
+.info_text2 {
+  line-height: 2.5rem;
 }
 .info_text3 {
   padding: 2rem 0rem;
@@ -152,20 +167,17 @@ img {
   display: flex;
   flex-flow: column nowrap;
   padding: 1rem 0rem 2rem 0rem;
-  border: 2px dotted purple;
 }
 .orientation_row-container, .campus_row-container, .guest_row-container {
   display: flex;
   flex-flow: row nowrap;
   padding: 1rem 1rem;
-  border: 1px dotted red;
 }
 .orientation_col-container, .campus_col-container, .guest_col-container {
   width: 65%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  border: 1px dotted black;
 }
 .orientation_img-container, .campus_img-container, .guest_img-container {
   width: 35%;
@@ -174,22 +186,25 @@ img {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 0.5rem 0.5rem;
-  border: 1px dotted black;
 }
 .orientation_text2, .campus_text2, .guest_text2 {
   padding: 0.5rem 0.5rem;
-  border: 1px dotted black;
 }
 .orientation_text3, .campus_text3, .guest_text3 {
   padding: 0.5rem 0.5rem;
-  border: 1px dotted black;
+}
+.orientation_link, .campus_link, .guest_link {
+  color: rgb(128,158,194);
+}
+.fa-long-arrow-right {
+  margin: 0 0.25rem;
 }
 /** THIRD BLOCK **/
 .subjects_col-container {
   display: flex;
   flex-flow: column nowrap;
   padding: 1rem 0rem;
-  border: 4px dotted green;
+  background-color: rgba(128,158,194,0.5);
 }
 .subjects_title {
   text-align: center;
@@ -200,7 +215,6 @@ img {
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 0rem 3rem;
-  border: 3px dotted red;
 }
 .subject_block-col-container {
   flex: 0 1 33%;
@@ -210,7 +224,7 @@ img {
   flex-flow: column nowrap;
   padding: 0rem 0rem 1.5rem 0rem;
   margin: 1rem 1rem;
-  border: 2px dotted black;
+  background-color: rgb(255,255,255);
 }
 .subject_text1 {
   font-weight: bold;
@@ -218,62 +232,59 @@ img {
 }
 .subject_text2 {
   padding: 0.5rem 1rem 0rem 1rem;
+  line-height: 2rem;
 }
 /** FOURTH BLOCK **/
 
-.thesis-col-container {
+.thesis_col-container {
   display: flex;
   flex-flow: column nowrap;
   padding: 0rem 0rem 2rem 0rem;
-  border: 3px dotted red;
 }
 
-.thesis-title {
-  font-size: 2rem;
+.thesis_title {
   text-align: center;
   font-weight: bold;
   padding: 2rem 0rem;
 }
 
-.thesis-row-container {
+.thesis_row-container {
   display: flex;
   flex-flow: row nowrap;
 }
 
-.thesis-left-block-container {
+.thesis_left-block-container {
   width: 60%;
   display: flex;
   flex-flow: column nowrap;
   padding: 0rem 1.5rem;
-  border: 2px dotted blue;
 }
 
-.thesis-video-text1 {
+.thesis_video-text1 {
   padding: 1.5rem 0rem 0.5rem 0rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-.thesis-right-block-container {
+.thesis_video-text2 {
+  line-height: 1.75rem;
+}
+.thesis_right-block-container {
   width: 40%;
   display: flex;
   flex-flow: column nowrap;
-  border: 2px dotted green;
 }
 
-.thesis-secondary-row-container {
+.thesis_secondary-row-container {
   display: flex;
   flex-flow: row nowrap;
   padding: 1rem 1rem;
-  border: 1px dotted black;
 }
 
-.thesis-secondary-img-container {
+.thesis_secondary-img-container {
   width: 35%;
-  border: 1px solid gold;
 }
 
-.thesis-secondary-text-container {
+.thesis_secondary-text-container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -281,25 +292,27 @@ img {
   padding: 0rem 1rem;
 }
 
-.thesis-secondary-text1 {
+.thesis_secondary-text1 {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 0rem 0rem 1rem 0rem;
 }
 
 /** FOOTER **/
-.footer-row-container {
+.footer_row-container {
   display: flex;
   flex-flow: row nowrap;
   padding: 1rem 1.5rem 2.5rem 1.5rem;
 }
 
-.footer-links-container {
+.footer_links-container {
   margin-left: auto;
   display: flex;
   flex-flow: row nowrap;
 }
 
-.footer-link-text {
-  padding: 0 0.25rem;
+.footer_link-text {
+  font-weight: bold;
+  padding: 0rem 0.35rem 0rem 0.35rem;
+  margin: 0rem 0.15rem 0rem 0.15rem;
 }
