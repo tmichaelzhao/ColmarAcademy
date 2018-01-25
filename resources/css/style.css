@@ -322,7 +322,10 @@ a>*:hover {
   .info_right_col-container, .orientation_col-container, .campus_col-container, .guest_col-container, .orientation_img-container, .campus_img-container, .guest_img-container, .thesis_left-block-container {
     width: 100%;
   }
-
+  .subject_text1 {
+    text-align: center;
+    padding: 1.5rem 1rem 0rem 1rem;
+  }
 }
 /**DESKTOP VIEW**/
 @media screen and (min-width: 768px) {
